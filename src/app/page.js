@@ -20,10 +20,9 @@ export default function Home() {
             <p className="text-xs md:text-sm text-gray-700 leading-snug xl:pr-14">
               More than just a refuge, the{" "}
               <span className="italic">Urban Cozy</span> is a sustainable haven
-              crafted from recyclable foam with an outstanding R-value of 20,
-              ensuring exceptional heat regulation. This innovative shelter
-              embodies the essence of urban comfort, creating a positive impact
-              on communities and the environment alike.
+              crafted from recyclable foam. This innovative shelter embodies the
+              essence of urban comfort, creating a positive impact on
+              communities and the environment alike.
             </p>
             <ContactButton buttonText="Learn more" />
           </div>
