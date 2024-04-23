@@ -5,7 +5,7 @@ import placeholder from "../../public/images/placeholder.png";
 export default function Home() {
   return (
     <main className="flex flex-col flex-1 mx-auto justify-center items-center px-5 md:px-10">
-      <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mb-10 lg:mb-5">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mb-10">
         <div className="flex flex-col w-full lg:w-1/2 order-2 lg:order-1">
           <p className="uppercase text-gray-500 text-xs md:text-sm pb-2 font-bold">
             Coming soon
