@@ -32,6 +32,8 @@ export default function Home() {
           src={placeholder}
           alt="placeholder"
           className="w-full lg:w-1/2 h-auto object-cover order-1 lg:order-2"
+          placeholder="blur"
+          priority
         />
       </div>
     </main>
