@@ -7,29 +7,11 @@ export default function Home() {
     <main className="flex flex-col flex-1 mx-auto justify-center items-center px-5 md:px-10">
       <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mb-10 lg:mb-5">
         <div className="flex flex-col w-full lg:w-1/2 order-2 lg:order-1">
-          <p className="uppercase text-gray-700 text-xs md:text-sm pb-2">
+          <p className="uppercase text-gray-500 text-xs md:text-sm pb-2 font-bold">
             Coming soon
           </p>
-          <div className="flex flex-col gap-3 xl-gap-5 md:gap-4">
-            <h1 className="md:hidden text-[28px] leading-tight font-semibold">
-              A revolutionary shelter <br />
-              designed to redefine <br />
-              the way we address <br />
-              homelessness.
-            </h1>
-            <h1 className="hidden md:flex lg:hidden text-[52px] leading-tight font-semibold">
-              A revolutionary shelter <br />
-              designed to redefine <br />
-              the way we address <br />
-              homelessness.
-            </h1>
-            <h1 className="hidden lg:flex xl:hidden text-4xl leading-tight font-medium">
-              A revolutionary shelter <br />
-              designed to redefine <br />
-              the way we address <br />
-              homelessness.
-            </h1>
-            <h1 className="hidden xl:flex text-5xl leading-tight font-medium">
+          <div className="flex flex-col gap-3 md:gap-4 lg:gap-5 ">
+            <h1 className="flex text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
               A revolutionary shelter <br />
               designed to redefine <br />
               the way we address <br />
