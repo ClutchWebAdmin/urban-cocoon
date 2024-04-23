@@ -6,9 +6,33 @@ import TheFooter from "./components/TheFooter";
 const notoSans = Noto_Sans({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL("https://urban-cocoon.vercel.app"),
   title: "Urban Cocoon",
   description:
     "A revolutionary shelter designed to redefine the way we address homelessness. Coming soon...",
+  keywords:
+    "Shelter, homeless shelter, homeless shelters, homeless shelters for sale, temporary housing solutions, pallet shelter, affordable, temporary housing",
+  openGraph: {
+    title: "Urban Cocoon",
+    description:
+      "A revolutionary shelter designed to redefine the way we address homelessness. Coming soon...",
+    siteName: "Urban Cocoon",
+    type: "website",
+    locale: "en_US",
+    url: "https://urban-cocoon.vercel.app",
+    images: [
+      {
+        url: "https://urban-cocoon.vercel.app/images/og-image.png",
+        alt: "Urban Cocoon",
+      },
+    ],
+  },
+  images: [
+    {
+      url: "https://urban-cocoon.vercel.app/images/og-image.png",
+      alt: "Urban Cocoon",
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
