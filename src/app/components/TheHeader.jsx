@@ -15,7 +15,7 @@ export default function TheHeader() {
         />
       </Link>
 
-      <ContactButton buttonText="Contact" />
+      <ContactButton buttonText="Contact Us" />
     </header>
   );
 }

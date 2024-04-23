@@ -1,7 +1,5 @@
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
-import logo from "../../public/logos/urban-cocoon-logo.png";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
 
@@ -17,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`relative min-h-svh flex flex-col items-center justify-center ${notoSans.className} tracking-wide pb-12 text-[#2d1a3a]`}
+        className={`relative min-h-svh flex flex-col items-center justify-center ${notoSans.className} tracking-wide pb-12 text-indigo-950`}
       >
         <TheHeader />
         {children}

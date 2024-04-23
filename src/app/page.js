@@ -2,8 +2,8 @@ import ContactButton from "./components/ContactButton";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-2 flex-1 w-full md:w-4/5 lg:w-3/5 justify-center p-5">
-      <h1 className="md:hidden text-[28px] leading-normal font-semibold">
+    <main className="flex flex-col gap-3 xl:gap-5 flex-1 w-full md:w-4/5 lg:w-3/5 justify-center p-5 mb-5">
+      <h1 className="md:hidden text-[28px] leading-tight font-semibold">
         A revolutionary shelter <br />
         designed to redefine <br />
         the way we address <br />
@@ -27,7 +27,7 @@ export default function Home() {
         the way we address <br />
         homelessness.
       </h1>
-      <p className="text-sm text-gray-600 font-light leading-snug mb-2">
+      <p className="text-xs md:text-sm text-gray-700 leading-snug xl:pr-14">
         More than just a refuge, the <span className="italic">Urban Cozy</span>{" "}
         is a sustainable haven crafted from recyclable foam with an outstanding
         R-value of 20, ensuring exceptional heat regulation. This innovative
