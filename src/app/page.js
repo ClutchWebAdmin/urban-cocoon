@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex flex-col flex-1 mx-auto justify-center items-center px-5 md:px-10">
       <div className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mb-10">
         <div className="flex flex-col w-full lg:w-1/2 order-2 lg:order-1">
-          <p className="uppercase text-gray-500 text-xs md:text-sm pb-2 font-bold">
+          <p className="uppercase text-gray-500 text-xs md:text-sm pb-2 font-semibold">
             Coming soon
           </p>
           <div className="flex flex-col gap-3 md:gap-4 lg:gap-5 ">
@@ -17,7 +17,7 @@ export default function Home() {
               the way we address <br />
               homelessness.
             </h1>
-            <p className="text-xs md:text-sm text-gray-700 leading-snug xl:pr-14">
+            <p className="text-xs md:text-sm text-gray-800 leading-snug xl:pr-14">
               More than just a refuge, the{" "}
               <span className="italic">Urban Cozy</span> is a sustainable haven
               crafted from recyclable foam. This innovative shelter embodies the
