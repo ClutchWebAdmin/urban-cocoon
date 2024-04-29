@@ -14,7 +14,6 @@ export default function TheHeader() {
           priority
         />
       </Link>
-
       <ContactButton buttonText="Contact Us" />
     </header>
   );
