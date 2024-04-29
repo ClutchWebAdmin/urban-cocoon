@@ -37,7 +37,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`relative min-h-svh flex flex-col items-center justify-center ${notoSans.className} tracking-wide pb-12 text-indigo-950`}
       >

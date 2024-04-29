@@ -1,6 +1,7 @@
 import placeholder from "../../../public/images/placeholder.png";
 import ContactButton from "./ContactButton";
 import Image from "next/image";
+import ImageCarousel from "./ImageCarousel";
 
 const featuresArray = [
   "Crafted from high-quality, recyclable EPS foam",
@@ -22,15 +23,9 @@ export default function FeaturesSection() {
       id="features"
       className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl w-full mb-10"
     >
-      <Image
-        src={placeholder}
-        alt="placeholder"
-        className="w-full lg:w-1/2 h-auto object-cover"
-        placeholder="blur"
-        priority
-      />
+      <ImageCarousel />
       <div className="flex flex-col w-full lg:w-1/2">
-        <div className="flex flex-col gap-3 md:gap-4 lg:gap-5 ">
+        <div className="flex flex-col gap-5 ">
           <h1 className="flex text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
             Key Features
           </h1>
