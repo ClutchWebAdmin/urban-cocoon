@@ -2,6 +2,8 @@ import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
+import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const notoSans = Noto_Sans({ subsets: ["latin"] });
 
@@ -44,6 +46,8 @@ export default function RootLayout({ children }) {
         <TheHeader />
         {children}
         <TheFooter />
+        <Analytics />
+        <GoogleAnalytics gaId="G-CZ13CNF79B" />
       </body>
     </html>
   );
