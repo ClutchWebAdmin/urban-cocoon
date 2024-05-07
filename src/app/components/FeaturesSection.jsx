@@ -1,6 +1,4 @@
-import placeholder from "../../../public/images/placeholder.png";
 import ContactButton from "./ContactButton";
-import Image from "next/image";
 import ImageCarousel from "./ImageCarousel";
 
 const featuresArray = [
