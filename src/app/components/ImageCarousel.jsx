@@ -2,15 +2,13 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import placeholder1 from "../../../public/images/placeholder1.png";
-import placeholder2 from "../../../public/images/placeholder2.png";
-import placeholder3 from "../../../public/images/placeholder3.png";
-import placeholder4 from "../../../public/images/placeholder4.png";
+import carousel1 from "../../../public/images/carousel-1.png";
+import carousel2 from "../../../public/images/carousel-2.png";
 
 export default function ImageCarousel() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [placeholder1, placeholder2, placeholder3, placeholder4];
+  const images = [carousel1, carousel2];
 
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);

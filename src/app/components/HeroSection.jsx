@@ -1,6 +1,6 @@
 import Image from "next/image";
 import LinkButton from "./LinkButton";
-import placeholder from "../../../public/images/placeholder.png";
+import heroImage from "../../../public/images/hero-image.png";
 
 export default function HeroSection() {
   return (
@@ -28,8 +28,8 @@ export default function HeroSection() {
         </div>
       </div>
       <Image
-        src={placeholder}
-        alt="placeholder"
+        src={heroImage}
+        alt="Photo of Urban Cocoon"
         className="w-full lg:w-1/2 h-auto object-cover order-1 lg:order-2"
         placeholder="blur"
         priority
