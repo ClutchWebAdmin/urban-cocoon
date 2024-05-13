@@ -21,7 +21,12 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div className="relative w-full h-full lg:w-1/2 flex items-center justify-center">
+    <div
+      className="relative w-full h-full lg:w-1/2 flex items-center justify-center"
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       <div
         className="absolute left-3 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-900 hover:bg-indigo-700 bg-opacity-90 transition duration-300 cursor-pointer"
         onClick={handlePrev}

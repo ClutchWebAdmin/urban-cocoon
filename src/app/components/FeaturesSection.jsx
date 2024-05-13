@@ -23,11 +23,16 @@ export default function FeaturesSection() {
     >
       <ImageCarousel />
       <div className="flex flex-col w-full lg:w-1/2">
-        <div className="flex flex-col gap-5 ">
+        <div
+          className="flex flex-col gap-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <h1 className="flex text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
             Key Features
           </h1>
-          <ul className="list-disc ml-8">
+          <ul className="list-disc ml-8 flex flex-col gap-2">
             {featuresArray.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}

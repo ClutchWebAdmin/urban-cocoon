@@ -8,7 +8,12 @@ export default function HeroSection() {
       id="hero-section"
       className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mb-10"
     >
-      <div className="flex flex-col w-full lg:w-1/2 order-2 lg:order-1">
+      <div
+        className="flex flex-col w-full lg:w-1/2 order-2 lg:order-1"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <p className="uppercase text-gray-500 text-xs md:text-sm pb-2 font-semibold">
           Coming soon
         </p>
@@ -31,8 +36,10 @@ export default function HeroSection() {
         src={heroImage}
         alt="Photo of Urban Cocoon"
         className="w-full lg:w-1/2 h-auto object-cover order-1 lg:order-2"
-        placeholder="blur"
         priority
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        data-aos-once="true"
       />
     </section>
   );
