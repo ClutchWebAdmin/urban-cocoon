@@ -9,7 +9,7 @@ import AOSLoader from "./utils/AOSLoader";
 const notoSans = Noto_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  metadataBase: new URL("https://urban-cocoon.vercel.app"),
+  metadataBase: new URL("https://urbancocoon.us"),
   title: "Urban Cocoon",
   description:
     "A revolutionary shelter designed to redefine the way we address homelessness. Coming soon...",
@@ -22,17 +22,17 @@ export const metadata = {
     siteName: "Urban Cocoon",
     type: "website",
     locale: "en_US",
-    url: "https://urban-cocoon.vercel.app",
+    url: "https://urbancocoon.us",
     images: [
       {
-        url: "https://urban-cocoon.vercel.app/images/og-image.png",
+        url: "https://urbancocoon.us/images/og-image.png",
         alt: "Urban Cocoon",
       },
     ],
   },
   images: [
     {
-      url: "https://urban-cocoon.vercel.app/images/og-image.png",
+      url: "https://urbancocoon.us/images/og-image.png",
       alt: "Urban Cocoon",
     },
   ],
