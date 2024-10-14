@@ -1,5 +1,5 @@
-import ContactButton from "./ContactButton";
-import ImageCarousel from "./ImageCarousel";
+import ContactButton from "../components/ContactButton";
+import ImageCarousel from "../components/ImageCarousel";
 
 const featuresArray = [
   "Crafted from high-quality, recyclable EPS foam",
@@ -15,24 +15,48 @@ const featuresArray = [
   "Versatile design for various applications (temporary housing, backyard guest rooms, remote workspaces)",
 ];
 
+// export const metadata = {
+//   title: "Cocoon",
+//   description: "Cocoon",
+//   keywords:
+//     "shelter, cocoon",
+//   openGraph: {
+//     title: "Shelter",
+//     description: "Shelter",
+//     siteName: "Urban Cocoon",
+//     type: "website",
+//     locale: "en_US",
+//     url: "https://urbancocoon.us",
+    
+//   },
+//   images: [
+//     {
+//       url: "https://clutchindustries.com/images/og-image.png",
+//       alt: "Clutch Industries",
+//     },
+//   ],
+// };
+
+
 export default function FeaturesSection() {
   return (
+    
     <section
-      id="features"
-      className="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl w-full mb-10"
+      id="/features"
+      className="flex flex-col md:flex-row lg:items-center text-[#2A2669] gap-20 lg:gap-20 md:max-w-full lg:max-w-full xl:max-w-full w-full mb-10 pt-32 pb-4 "
     >
       <ImageCarousel />
-      <div className="flex flex-col w-full lg:w-1/2">
+      <div className="flex flex-col w-full lg:w-1/2 p-2">
         <div
           className="flex flex-col gap-5"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <h1 className="flex text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
+          <h1 className="flex text-[#2A2669] text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
             Key Features
           </h1>
-          <ul className="list-disc ml-8 flex flex-col gap-2">
+          <ul className="list-disc text-clutchBlue-700 ml-8 flex flex-col gap-2">
             {featuresArray.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
@@ -41,5 +65,7 @@ export default function FeaturesSection() {
         </div>
       </div>
     </section>
+    
+    
   );
 }

@@ -22,18 +22,18 @@ export default function ImageCarousel() {
 
   return (
     <div
-      className="relative w-full h-full lg:w-1/2 flex items-center justify-center"
+      className="relative w-full h-full lg:w-1/2 flex items-center justify-center p-4"
       data-aos="fade-in"
       data-aos-duration="1000"
       data-aos-once="true"
     >
       <div
-        className="absolute left-3 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-900 hover:bg-indigo-700 bg-opacity-90 transition duration-300 cursor-pointer"
+        className="absolute left-5 flex items-center justify-center w-12 h-12 rounded-full bg-clutchBlue-800 shadow-inner shadow-white hover:bg-clutchBlue-200 hover:shadow-black bg-opacity-90 hover:bg-opacity-90 transition duration-300 cursor-pointer"
         onClick={handlePrev}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-white"
+          className="h-6 w-6 text-white transition duration-100 hover:-translate-x-1"
           fill="none"
           viewBox="0 0 24 24"
           stroke="white"
@@ -47,12 +47,12 @@ export default function ImageCarousel() {
         </svg>
       </div>
       <div
-        className="absolute right-3 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-900 hover:bg-indigo-700 bg-opacity-90 transition duration-300 cursor-pointer"
+        className="absolute right-5 flex items-center justify-center w-12 h-12 rounded-full bg-clutchBlue-800 shadow-inner shadow-white hover:bg-clutchBlue-200 hover:shadow-black bg-opacity-90 hover:bg-opacity-90  transition duration-100 cursor-pointer"
         onClick={handleNext}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-white"
+          className="h-6 w-6 text-white transition duration-100 hover:translate-x-1"
           fill="none"
           viewBox="0 0 24 24"
           stroke="white"
@@ -68,10 +68,10 @@ export default function ImageCarousel() {
       <Image
         src={images[currentImageIndex]}
         alt="Artificial render of shelter"
-        className="w-full h-auto object-cover"
+        className="w-full h-auto object-cover rounded-2xl shadow-2xl"
         placeholder="blur"
       />
-      <div className="absolute bottom-3 flex items-center justify-center w-full space-x-2">
+      <div className="absolute bottom-5 flex items-center justify-center w-full space-x-2">
         {images.map((_, index) => (
           <div
             key={index}
