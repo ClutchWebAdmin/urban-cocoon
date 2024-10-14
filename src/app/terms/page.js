@@ -84,6 +84,5 @@ export default async function TermsPage() {
           ))}
         </div>
       </main>
-    
   );
 }

@@ -1,4 +1,4 @@
-// const baseUrl = "https://urbancocoon.us";
+const baseUrl = "https://urbancocoon.us";
 
 export default function Sitemap() {
   return [
