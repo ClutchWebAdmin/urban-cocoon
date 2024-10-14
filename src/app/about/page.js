@@ -23,7 +23,7 @@ export default function FeaturesSection() {
        
       
       <div className="flex sm:flex-row flex-col p-2 justify-between">
-        <Image src={teamphoto} className="rounded-2xl w-full sm:w-1/2 h-auto object-cover order-2 p-2"/>
+        <Image src={teamphoto} alt="Photo of Team" className="rounded-2xl w-full sm:w-1/2 h-auto object-cover order-2 p-2"/>
         <div
           className="p-2"
           data-aos="fade-up"
