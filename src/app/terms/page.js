@@ -51,7 +51,7 @@ export default async function TermsPage() {
 
   return (
     
-      <section
+      <main
         id="/terms"
         className="flex flex-col gap-8 lg:gap-16 py-28 lg:py-28"
       >
@@ -83,7 +83,7 @@ export default async function TermsPage() {
             </div>
           ))}
         </div>
-      </section>
+      </main>
     
   );
 }
