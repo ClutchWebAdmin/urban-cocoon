@@ -4,11 +4,16 @@ import { useState } from "react";
 import Image from "next/image";
 import carousel1 from "../../../public/images/carousel-1.png";
 import carousel2 from "../../../public/images/carousel-2.png";
+import carousel6 from "../../../public/images/Cocoon4.jpg";
+import carousel7 from "../../../public/images/Cocoon9.jpeg";
+import carousel8 from "../../../public/images/Cocoon6.jpg";
+import carousel9 from "../../../public/images/Cocoon7.jpg";
+import carousel10 from "../../../public/images/Cocoon8.png";
 
 export default function ImageCarousel() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = [carousel1, carousel2];
+  const images = [carousel1, carousel2, carousel6, carousel7, carousel8, carousel9, carousel10];
 
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -22,7 +27,7 @@ export default function ImageCarousel() {
 
   return (
     <div
-      className="relative w-full h-full lg:w-1/2 flex items-center justify-center p-4"
+      className="relative w-full h-full  flex items-center justify-center p-4"
       data-aos="fade-in"
       data-aos-duration="1000"
       data-aos-once="true"
