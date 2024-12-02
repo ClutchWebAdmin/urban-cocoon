@@ -8,15 +8,18 @@ export default function HeroSection() {
     <section className="h-full w-full relative pt-28 bg-urbanPurple-100">
       {/* Background Image */}
       <div className="relative w-full h-svh">
-        <Image
-          src={Cocoon9}
-          alt="Photo of Urban Cocoon"
-          className="absolute inset-0 w-full h-full object-cover"
-          priority
-          data-aos="fade-in"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        />
+      <video
+  controls
+  autoPlay
+  loop
+  muted
+  playsInline
+  src="/videos/Urban_Coc1.mp4"
+  className="absolute inset-0 w-full h-full object-cover"
+  data-aos="fade-in"
+  data-aos-duration="1000"
+  data-aos-once="true"
+/>
         {/* Hero Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center  text-center text-white">
           <h1 className="text-[28px] md:text-[32px] lg:text-5xl xl:text-7xl leading-tight font-semibold text-outline">
