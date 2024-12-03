@@ -5,7 +5,7 @@ import Cocoon9 from "../../../public/images/Cocoon9.jpeg";
 
 export default function HeroSection() {
   return (
-    <section className="h-full w-full relative pt-28 bg-urbanPurple-100">
+    <section className="h-full w-full relative  bg-urbanPurple-100">
       {/* Background Image */}
       <div className="relative w-full h-svh">
       <video
@@ -15,18 +15,18 @@ export default function HeroSection() {
   muted
   playsInline
   src="/videos/Urban_Coc1.mp4"
-  className="absolute inset-0 w-full h-full object-cover"
+  className="absolute top-[7rem] left-0 w-full h-[calc(100vh-7rem)] object-cover"
   data-aos="fade-in"
   data-aos-duration="1000"
   data-aos-once="true"
 />
         {/* Hero Content */}
-        <div className="absolute w-full lg:w-1/2 inset-0 flex flex-col lg:justify-end lg:items-start  lg:text-start text-white pb-40 pl-10">
-          <h1 className="text-[28px] md:text-[32px] lg:text-5xl xl:text-7xl leading-tight font-semibold text-outline">
+        <div className="absolute w-full lg:w-1/2 inset-0 flex flex-col justify-end items-center lg:items-start text-center lg:text-start text-white pb-2 md:pb-20 px-2 md:pl-10">
+          <h1 className="text-[32px] md:text-[32px] lg:text-5xl xl:text-7xl leading-tight text-urbanPurple-500 font-semibold text-outline">
             Experience the future of shelters with <br />
             <span className="italic">Urban Cocoon</span>
           </h1>
-          <p className="mt-4 text-sm md:text-xl leading-snug xl:px-14 text-outline">
+          <p className="mt-4 text-sm md:text-xl leading-snug  text-outline">
             A revolutionary disaster relief shelter designed to provide rapid, secure, and
             comfortable refuge for individuals and families affected by disasters. The perfect blend
             of comfort, sustainability, and affordability. With its modular design and quick

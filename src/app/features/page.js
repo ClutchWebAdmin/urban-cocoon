@@ -49,34 +49,11 @@ const featuresArray2 = [
 export default function FeaturesSection() {
   return (
     
-    // <section
-    //   id="/features"
-    //   className="flex flex-col md:flex-row lg:items-center text-[#2A2669] gap-20 lg:gap-20 md:max-w-full lg:max-w-full xl:max-w-full w-full mb-10 pt-32 pb-4 "
-    // >
-    //   <ImageCarousel />
-    //   <div className="flex flex-col w-full lg:w-1/2 p-2">
-    //     <div
-    //       className="flex flex-col gap-5"
-    //       data-aos="fade-up"
-    //       data-aos-duration="1000"
-    //       data-aos-once="true"
-    //     >
-    //       <h1 className="flex text-[#2A2669] text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
-    //         Key Features
-    //       </h1>
-    //       <ul className="list-disc text-urbanPurple-700 ml-8 flex flex-col gap-2">
-    //         {featuresArray.map((feature, index) => (
-    //           <li key={index}>{feature}</li>
-    //         ))}
-    //       </ul>
-    //       <ContactButton buttonText="Contact for more info" />
-    //     </div>
-    //   </div>
-    // </section>
 
     <section
   id="/features"
-  className="relative overflow-hidden bg-urbanPurple-950 pt-32 pb-32 space-y-24 w-full"
+  className="relative overflow-hidden bg-urbanPurple-950 pt-32 pb-28
+   space-y-12 w-full"
 >
   <div className="flex justify-center items-center w-full">
     <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center text-urbanPurple-100">
@@ -84,6 +61,7 @@ export default function FeaturesSection() {
     </h1>
   </div>
   
+  {/* First section */}
   <div className="relative">
     <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
       <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
@@ -113,54 +91,70 @@ export default function FeaturesSection() {
         </div>
       </div>
       <div className="mt-12 sm:mt-16 lg:mt-0">
-        <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+        <div className="md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
           <Image loading="lazy" width="647" height="486"
-                 className="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                 className="w-full md:rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                  src={Cocoon9} />
         </div>
       </div>
     </div>
   </div>
 
+    {/* second section */}
     <div className="relative">
-        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
-        <div className="mt-12 sm:mt-16 lg:mt-0">
-                <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                    <Image loading="lazy" width="647" height="486"
-                        className="w-full rounded-2xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                         src={Cocoon4} />
-                </div>
-            </div>
-            <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
-
-                <div>
-                    <div>
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-urbanPurple-500">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                          stroke-width="1.5" stroke="currentColor" aria-hidden="true"
-                          className="h-8 w-8 text-urbanPurple-100">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M12 2.5l2.95 6.4 6.55.85-4.9 4.85 1.2 6.55L12 17.75l-5.8 3.4 1.2-6.55L2.5 9.75l6.55-.85L12 2.5z"/>
-                          </svg>
-                        </span>
-                    </div>
-
-                    <div className="mt-6">
-                        <h2 className="text-3xl font-bold tracking-tight text-urbanPurple-500">
-                        Flexible, Safe, and Easy to Deploy:
-                        </h2>
-                        <p className="mt-4 text-lg text-urbanPurple-100">
-                            {featuresArray[1]}
-                        </p>
-                        <div className="mt-6">
-                            <ContactButton buttonText="Contact for more info"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8 flex flex-col-reverse lg:flex-row">
+    {/* Text Section */}
+    <div className="order-2 lg:order-2 mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
+      <div>
+        <div>
+          <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-urbanPurple-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              className="h-8 w-8 text-urbanPurple-100"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 2.5l2.95 6.4 6.55.85-4.9 4.85 1.2 6.55L12 17.75l-5.8 3.4 1.2-6.55L2.5 9.75l6.55-.85L12 2.5z"
+              />
+            </svg>
+          </span>
         </div>
 
-        <div className="relative lg:py-16">
+        <div className="mt-6">
+          <h2 className="text-3xl font-bold tracking-tight text-urbanPurple-500">
+            Flexible, Safe, and Easy to Deploy:
+          </h2>
+          <p className="mt-4 text-lg text-urbanPurple-100">{featuresArray[1]}</p>
+          <div className="mt-6">
+            <ContactButton buttonText="Contact for more info" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Image Section */}
+    <div className="order-1 lg:order-1 mt-12 sm:mt-16 lg:mt-0">
+      <div className="md:-ml-16 lg:relative lg:h-full lg:px-0">
+        <Image
+          loading="lazy"
+          width="647"
+          height="486"
+          className="w-full md:rounded-2xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:left-0 lg:h-full  "
+          src={Cocoon4}
+        />
+      </div>
+    </div>
+  </div>
+
+
+
+        <div className="relative py-12 lg:py-16">
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
             <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
 
@@ -193,7 +187,7 @@ export default function FeaturesSection() {
                 </div>
             </div>
             <div className="mt-12 sm:mt-16 lg:mt-0">
-                <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                <div className="md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                     
                          <ImageCarousel className=""/>
                 </div>

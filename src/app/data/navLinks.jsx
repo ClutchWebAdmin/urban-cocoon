@@ -7,8 +7,8 @@ export const navLinks = [
     text: "Pricing",
     linkTo: "/pricing",
   },
-  // {
-  //   text: "About Us",
-  //   linkTo: "/about",
-  // },
+  {
+    text: "About Us",
+    linkTo: "/about",
+  },
 ];

@@ -55,7 +55,7 @@ const isHomePage = pathname === "/";
       )}
 
       {isMobileMenuOpen && (
-        <nav className="md:hidden fixed inset-0 bg-clutchBlue-950 text-white opacity-[98%] z-[9000] animate__animated animate__slideInDown text-4xl">
+        <nav className="md:hidden fixed inset-0 bg-urbanPurple-300 text-white opacity-[98%] z-[9000] animate__animated animate__slideInDown text-4xl">
           
           <div className="flex flex-col h-full items-center justify-center space-y-12 ">
             <Link href="/" className="p-2" onClick={toggleMobileMenu}>
@@ -69,7 +69,7 @@ const isHomePage = pathname === "/";
               <Link
                 key={index}
                 href={item.linkTo}
-                className={`transition duration-300 rounded-sm font-medium hover:ring-2 ring-[#2A2669] ring-offset-4 hover:text-[#2A2669] p-2 ${pathname === `${item.linkTo}` ? 'text-amber-500' : ''}`}
+                className={`transition duration-300 rounded-sm font-medium hover:ring-2 ring-[#2A2669] ring-offset-4 hover:text-[#2A2669] p-2 ${pathname === `${item.linkTo}` ? 'text-urbanPurple-600' : ''}`}
                 onClick={toggleMobileMenu}
               >
                 {item.text}
