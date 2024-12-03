@@ -34,7 +34,7 @@ export default function ImageCarousel() {
     >
       {/* Previous Button */}
       <div
-        className="absolute z-10 left-1 lg:left-5 flex items-center justify-center w-12 h-12 rounded-full bg-urbanPurple-500 shadow-inner shadow-white hover:bg-clutchBlue-200 hover:shadow-black bg-opacity-90 hover:bg-opacity-90 transition duration-100 cursor-pointer"
+        className="absolute z-10 left-1 lg:left-16 flex items-center justify-center w-12 h-12 rounded-full bg-urbanPurple-500 shadow-inner shadow-white hover:bg-urbanPurple-400 hover:shadow-black bg-opacity-90  transition duration-100 cursor-pointer"
         onClick={handlePrev}
       >
         <svg
@@ -66,7 +66,7 @@ export default function ImageCarousel() {
 
       {/* Next Button */}
       <div
-        className="absolute z-10 right-1 lg:right-5 flex items-center justify-center w-12 h-12 rounded-full bg-urbanPurple-500 shadow-inner shadow-white hover:bg-clutchBlue-200 hover:shadow-black bg-opacity-90 hover:bg-opacity-90 transition duration-100 cursor-pointer"
+        className="absolute z-10 right-1 lg:right-16 flex items-center justify-center w-12 h-12 rounded-full bg-urbanPurple-500 shadow-inner shadow-white hover:bg-urbanPurple-400 hover:shadow-black bg-opacity-90  transition duration-100 cursor-pointer"
         onClick={handleNext}
       >
         <svg
