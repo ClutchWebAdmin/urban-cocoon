@@ -14,7 +14,7 @@ export default function HeroSection() {
   loop
   muted
   playsInline
-  src="/videos/Urban_Coc1.mp4"
+  src="/videos/CocoonBuild.mp4"
   className="absolute top-[7rem] left-0 w-full h-[calc(100vh-7rem)] object-cover"
   data-aos="fade-in"
   data-aos-duration="1000"
