@@ -19,24 +19,24 @@ export default function FeaturesSection() {
     
     <section
       id="/about"
-      className="flex flex-col lg:items-center text-[#2A2669] gap-20 lg:gap-20 md:max-w-full lg:max-w-full xl:max-w-full w-full mb-10 pt-32 pb-4 px-4"
+      className="flex flex-col lg:items-center text-urbanPurple-500 gap-20 lg:gap-20 md:max-w-full lg:max-w-full xl:max-w-full w-full mb-10 pt-32 pb-4 px-4 bg-urbanPurple-950"
     >
        <h2 className="text-4xl md:text-7xl 2xl:text-8xl text-center">
         Our Team
       </h2>
       
-      <div className="flex sm:flex-row flex-col p-2 justify-between shadow-inner shadow-[#2A2669] rounded-lg">
-        <Image src={Chris} alt="Photo of Team" className="rounded-2xl w-full sm:w-1/3  object-cover order-2 p-2"/>
+      <div className="flex sm:flex-row flex-col lg:p-8 justify-between shadow-inner shadow-[#2A2669] rounded-lg bg-urbanPurple-200">
+        <Image src={Chris} alt="Photo of Team" className="rounded-2xl w-full sm:w-1/3  object-cover order-1 lg:order-2 p-2"/>
         <div
-          className="p-2"
+          className="p-2 order-2 lg:order-1"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <h1 className="flex text-[#2A2669] pb-2 text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
+          <h1 className="flex text-urbanPurple-950 pb-8 text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
             Chris Blackburn
           </h1>
-          <ul className="list-disc text-clutchBlue-700 ml-8 flex flex-col gap-2 pb-2">
+          <ul className="list-disc text-urbanPurple-950 ml-8 flex flex-col gap-2 pb-8 lg:text-[24px]">
             {featuresArray.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
@@ -44,17 +44,17 @@ export default function FeaturesSection() {
           {/* <ContactButton buttonText="Contact for more info" /> */}
         </div>
       </div>
-      <div className="flex sm:flex-row flex-col p-2 justify-between shadow-inner shadow-[#2A2669] rounded-lg">
+      <div className="flex sm:flex-row flex-col lg:p-8 justify-between shadow-inner shadow-[#2A2669] rounded-lg bg-urbanPurple-200">
       <div
           className="p-2 order-2"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <h1 className="flex text-[#2A2669] pb-2 text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
+          <h1 className="flex text-urbanPurple-950 pb-8 text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold">
             Justin Boswell
           </h1>
-          <ul className="list-disc text-clutchBlue-700 ml-8 flex flex-col gap-2 pb-2">
+          <ul className="list-disc text-urbanPurple-950 ml-8 flex flex-col gap-2 pb-8 lg:text-[24px]">
             {featuresArray.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}

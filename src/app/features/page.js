@@ -64,7 +64,7 @@ export default function FeaturesSection() {
   {/* First section */}
   <div className="relative">
     <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-      <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
+      <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-7xl lg:py-16 lg:px-0">
         <div>
           <div>
             <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-urbanPurple-500">
@@ -91,9 +91,9 @@ export default function FeaturesSection() {
         </div>
       </div>
       <div className="mt-12 sm:mt-16 lg:mt-0">
-        <div className="md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+        <div className="lg:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
           <Image loading="lazy" width="647" height="486"
-                 className="w-full md:rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                 className="w-full lg:rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto "
                  src={Cocoon9} />
         </div>
       </div>
@@ -102,10 +102,10 @@ export default function FeaturesSection() {
 
     {/* second section */}
     <div className="relative">
-  <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8 flex flex-col-reverse lg:flex-row">
+  <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8 flex flex-col-reverse lg:flex-row ">
     {/* Text Section */}
     <div className="order-2 lg:order-2 mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
-      <div>
+      <div className="lg:px-8">
         <div>
           <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-urbanPurple-500">
             <svg
@@ -154,7 +154,7 @@ export default function FeaturesSection() {
 
 
 
-        <div className="relative py-12 lg:py-16">
+        <div className="relative py-12 lg:py-0">
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
             <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
 
@@ -187,7 +187,7 @@ export default function FeaturesSection() {
                 </div>
             </div>
             <div className="mt-12 sm:mt-16 lg:mt-0">
-                <div className="md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
+                <div className="lg:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                     
                          <ImageCarousel className=""/>
                 </div>

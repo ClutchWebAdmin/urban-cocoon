@@ -27,13 +27,13 @@ export default function ImageCarousel() {
 
   return (
     <div
-      className="relative w-full h-full  flex items-center justify-center md:p-4"
+      className="relative w-full h-full flex items-center justify-center lg:p-4"
       data-aos="fade-in"
       data-aos-duration="1000"
       data-aos-once="true"
     >
       <div
-        className="absolute left-1 md:left-5 flex items-center justify-center w-12 h-12 rounded-full bg-urbanPurple-500 shadow-inner shadow-white hover:bg-clutchBlue-200 hover:shadow-black bg-opacity-90 hover:bg-opacity-90 transition duration-300 cursor-pointer"
+        className="absolute left-1 lg:left-5 flex items-center justify-center w-12 h-12 rounded-full bg-urbanPurple-500 shadow-inner shadow-white hover:bg-clutchBlue-200 hover:shadow-black bg-opacity-90 hover:bg-opacity-90 transition duration-300 cursor-pointer"
         onClick={handlePrev}
       >
         <svg
@@ -52,7 +52,7 @@ export default function ImageCarousel() {
         </svg>
       </div>
       <div
-        className="absolute right-1 md:right-5 flex items-center justify-center w-12 h-12 rounded-full bg-urbanPurple-500 shadow-inner shadow-white hover:bg-clutchBlue-200 hover:shadow-black bg-opacity-90 hover:bg-opacity-90  transition duration-100 cursor-pointer"
+        className="absolute right-1 lg:right-5 flex items-center justify-center w-12 h-12 rounded-full bg-urbanPurple-500 shadow-inner shadow-white hover:bg-clutchBlue-200 hover:shadow-black bg-opacity-90 hover:bg-opacity-90  transition duration-100 cursor-pointer"
         onClick={handleNext}
       >
         <svg
@@ -73,7 +73,7 @@ export default function ImageCarousel() {
       <Image
         src={images[currentImageIndex]}
         alt="Artificial render of shelter"
-        className="w-full h-auto object-cover md:rounded-2xl shadow-2xl"
+        className="w-full h-auto object-cover lg:rounded-2xl shadow-2xl"
         placeholder="blur"
       />
       <div className="absolute bottom-5 flex items-center justify-center w-full space-x-2">
