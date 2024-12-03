@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="relative w-full h-svh">
       <video
-  controls
+  
   autoPlay
   loop
   muted
@@ -21,7 +21,7 @@ export default function HeroSection() {
   data-aos-once="true"
 />
         {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center  text-center text-white">
+        <div className="absolute w-full lg:w-1/2 inset-0 flex flex-col lg:justify-end lg:items-start  lg:text-start text-white pb-40 pl-10">
           <h1 className="text-[28px] md:text-[32px] lg:text-5xl xl:text-7xl leading-tight font-semibold text-outline">
             Experience the future of shelters with <br />
             <span className="italic">Urban Cocoon</span>
@@ -40,44 +40,49 @@ export default function HeroSection() {
       </div>
 
       {/* About The Mission */}
-      <div className="w-full py-20 bg-urbanPurple-100 px-5 md:px-10">
-        <div
-          className="flex flex-col items-center gap-4 md:gap-10 text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          <h1 className="text-[28px] md:text-4xl xl:text-5xl font-semibold">
-            About The Mission
-          </h1>
-          <p className="text-xs md:text-lg leading-snug max-w-4xl text-urbanPurple-900">
-            At <span className="italic">Urban Cocoon</span>, our mission is to provide swift,
-            sustainable, and secure shelter solutions for individuals and families affected by
-            disasters. Through innovative design and cutting-edge materials, we aim to create
-            modular, resilient shelters that offer immediate protection and long-term comfort,
-            ensuring dignity and safety in the aftermath of crises while supporting recovery and
-            rebuilding efforts. By combining portability with ease of deployment, Urban Cocoon
-            shelters can be rapidly transported and assembled in even the most challenging
-            environments. Our commitment to innovation and community resilience drives us to
-            continuously evolve our designs, empowering those affected by disasters with not just
-            shelter, but a foundation for hope and renewal.
-          </p>
-          <div className="mt-6">
-            <LinkButton linkTo="/pricing" text="Pricing" />
-          </div>
-        </div>
+      <div className="w-full py-10 bg-urbanPurple-100 px-5 md:px-10">
+  <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-10">
+    {/* Text and Link Section */}
+    <div
+      className="flex flex-col items-center lg:items-start gap-4 md:gap-10 justify-center text-center lg:text-left order-1"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <h1 className="text-[28px] md:text-4xl xl:text-5xl font-semibold">
+        About The Mission
+      </h1>
+      <p className="text-xs md:text-lg leading-snug max-w-4xl text-urbanPurple-900">
+        At <span className="italic">Urban Cocoon</span>, our mission is to provide swift,
+        sustainable, and secure shelter solutions for individuals and families affected by
+        disasters. Through innovative design and cutting-edge materials, we aim to create
+        modular, resilient shelters that offer immediate protection and long-term comfort,
+        ensuring dignity and safety in the aftermath of crises while supporting recovery and
+        rebuilding efforts. By combining portability with ease of deployment, Urban Cocoon
+        shelters can be rapidly transported and assembled in even the most challenging
+        environments. Our commitment to innovation and community resilience drives us to
+        continuously evolve our designs, empowering those affected by disasters with not just
+        shelter, but a foundation for hope and renewal.
+      </p>
+      <div className="mt-6">
+        <LinkButton linkTo="/pricing" text="Pricing" />
       </div>
+    </div>
 
-        {/* Image */}
-        <Image
-          src={heroImage}
-          alt="Photo of Urban Cocoon"
-          className="w-full h-auto object-cover order-2 lg:order-1 p-10"
-          priority
-          data-aos="fade-in"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        />
+    {/* Image Section */}
+    <Image
+      src={heroImage}
+      alt="Photo of Urban Cocoon"
+      className="w-full h-auto object-cover order-2 lg:order-1 p-10"
+      priority
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    />
+  </div>
+</div>
+
+        
       
 
       {/* Additional Info */}
