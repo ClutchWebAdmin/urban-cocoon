@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`relative min-h-svh flex flex-col items-center  } tracking-wide text-[#2A2669] pb-12   ${oxanium.variable} ${barlow.variable}`}
+        className={`relative min-h-svh flex flex-col items-center  } tracking-wide text-urbanPurple-900 pb-12   ${oxanium.variable} ${barlow.variable}`}
       >
         <TheHeader />
         {children}

@@ -40,7 +40,7 @@ export default function FeaturesSection() {
     
     <section
       id="/pricing"
-      className="flex flex-col md:flex-row md:items-center gap-20 lg:gap-20 text-[#2A2669] md:max-w-full lg:max-w-full xl:max-full w-full mb-10 pt-32 pb-4"
+      className="flex flex-col md:flex-row md:items-center gap-20 lg:gap-20 text-urbanPurple-500 md:max-w-full lg:max-w-full xl:max-full w-full mb-10 pt-32 pb-4 bg-urbanPurple-950"
     >
       <Image
         src={heroImage}
@@ -61,7 +61,7 @@ export default function FeaturesSection() {
           <h1 className="flex text-[28px] md:text-[52px] lg:text-4xl xl:text-5xl leading-tight font-semibold ">
             Pricing
           </h1>
-          <ul className="list-disc text-clutchBlue-700 ml-8 flex flex-col gap-2">
+          <ul className="list-disc text-urbanPurple-200 ml-8 flex flex-col gap-2">
             {pricesArray.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}

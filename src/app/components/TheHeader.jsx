@@ -17,7 +17,7 @@ export default function TheHeader() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className={`${oxanium.className}sticky fixed  flex flex-row w-full z-50 border-b-2 border-[#2A2669] bg-gray-100 opacity-80 shadow-inner shadow-[#2A2669] shadow-2xl ${
+    <header className={`${oxanium.className}sticky fixed  flex flex-row w-full z-50 border-b-2 border-urbanPurple-900 bg-gradient-to-r from-urbanPurple-400 via-urbanPurple-300 to-urbanPurple-800 bg-opacity-80 shadow-inner shadow-urbanPurple-900 shadow-2xl ${
         isMobileMenuOpen ? ' opacity-[95%]' : ' opacity-[90%]'
       }`}>
       
@@ -26,7 +26,7 @@ export default function TheHeader() {
           <Link href="/">
             <Image
               src={logo}
-              className="h-[70px] w-auto hover:scale-110 transition duration-300 hover:ring-2 ring-[#2A2669] ring-offset-2  p-1 rounded-lg"
+              className="h-[70px] w-auto hover:scale-110 transition duration-300 hover:ring-2 ring-urbanPurple-900 ring-offset-2 p-1 rounded-lg"
               alt="Clutch"
               priority
             />
@@ -40,14 +40,14 @@ export default function TheHeader() {
               <Link
                   key={index}
                   href={item.linkTo}
-                  className={`font-medium ${oxanium.variable} px-2 py-4 transition duration-300 cursor-pointer hover:text-white text-[#2A2669] transition duration-300 rounded-sm font-medium hover:ring-2 ring-[#2A2669] ring-offset-4 hover:bg-[#2A2669]`}
+                  className={`font-medium ${oxanium.variable} px-2 py-3 transition duration-300 cursor-pointer hover:text-white text-urbanPurple-900 transition duration-300 rounded-lg font-medium  hover:bg-gradient-to-tl from-urbanPurple-400 via-urbanPurple-800 to-urbanPurple-300`}
               >
                 {item.text}
               </Link>
             ))}
             <Link
               href="https://clutch.invportal.com/login"
-              className="font-medium px-2 py-4 transition duration-300 rounded-sm hover:text-white text-[#2A2669] hover:ring-2 ring-[#2A2669] ring-offset-4 hover:bg-[#2A2669]"
+              className="font-medium px-2 py-3 transition duration-300 rounded-lg hover:text-white text-urbanPurple-900 hover:bg-gradient-to-tl from-urbanPurple-400 via-urbanPurple-800 to-urbanPurple-300"
             >
               Investor Portal
             </Link>  
