@@ -21,7 +21,7 @@ export default function TheHeader() {
         isMobileMenuOpen ? ' opacity-[95%]' : ' opacity-[90%]'
       }`}>
       
-      <nav className={`flex flex-row w-full h-fit lg:items-center justify-between m-5 `}>
+      <nav className={`flex flex-row w-full h-fit lg:items-center justify-between m-3 `}>
         
           <Link href="/">
             <Image
