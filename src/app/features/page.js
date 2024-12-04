@@ -52,7 +52,7 @@ export default function FeaturesSection() {
 
     <section
       id="/features"
-      className="relative overflow-hidden bg-urbanPurple-950 pt-28 pb-28
+      className="relative overflow-hidden bg-urbanPurple-950 pt-28 lg:pt-24 pb-28
       space-y-12 w-full"
     >
       {/* <div className="flex justify-center items-center w-full">
